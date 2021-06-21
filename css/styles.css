@@ -1,8 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
-    background: rgb(255, 227, 195);
+    background: #fff;
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid purple;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background: linear-gradient(to left, #e0a22d 0%, #330867 100%);
+}
+
+.header-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,18 +28,30 @@ header {
 img {
     width: 70%;
     height: auto;
-    padding-bottom: 5%;
+    border-radius: 5px;
 }
 
 #schedule {
-    background: purple;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    background: purple;
+    border: 5px solid black;
+    margin: 5%;
 }
 
 .col {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: grey;
   }
+
+  #roster {
+      border: 5px solid black;
+      margin: 5%;
+  }
+
+  #stats {
+    border: 5px solid black;
+    margin: 5%;
+}
