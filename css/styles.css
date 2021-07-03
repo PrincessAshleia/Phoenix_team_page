@@ -3,14 +3,13 @@
 }
 
 :root {
-    background: #fff;
+    background: rgb(218, 214, 214);
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid purple;
     border-radius: 15px;
     font-size: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -31,14 +30,28 @@ img {
     border-radius: 5px;
 }
 
-#schedule {
+#team_updates {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: purple;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(to left, #e0a22d 0%, #330867 100%);
     border: 5px solid black;
+    border-radius: 5px;
     margin: 5%;
 }
+
+.schedule {
+    order: -1;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2%;
+}
+
+.news {
+    justify-content: space-around;
+    text-align: center;
+    padding: 2%;
+} 
 
 .col {
     display: flex;
@@ -48,10 +61,26 @@ img {
 
   #roster {
       border: 5px solid black;
+      border-radius: 5px;
       margin: 5%;
+      align-items: center;
+  }
+
+  ul {
+      display: flex;
+      flex-direction: column;
+  }
+
+  li {
   }
 
   #stats {
     border: 5px solid black;
+    border-radius: 5px;
     margin: 5%;
+    text-align: center;
+}
+
+@media and (min-width: 768px) {
+    /* Convert roster and stats into column on same row */
 }
