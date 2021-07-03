@@ -17,7 +17,14 @@ header {
     background: linear-gradient(to left, #e0a22d 0%, #330867 100%);
 }
 
-.header-img {
+.team_updates {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 5%;
+}
+
+.team-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,45 +32,44 @@ header {
 }
 
 img {
-    width: 70%;
+    order: 0;
+    width: 80%;
     height: auto;
     border-radius: 5px;
-}
-
-#team_updates {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: linear-gradient(to left, #e0a22d 0%, #330867 100%);
-    border: 5px solid black;
-    border-radius: 5px;
-    margin: 5%;
+    margin-bottom: 2em;
 }
 
 .schedule {
-    order: -1;
+    order: 1;
     justify-content: space-around;
     text-align: center;
     padding: 2%;
+    border: 5px solid black;
+    margin-bottom: 6%;
+    background: grey;
 }
 
-.news {
+.schedule a {
+    color: white;
+}
+
+.team-news {
     justify-content: space-around;
     text-align: center;
+    margin: 5%;
     padding: 2%;
+    border: 5px solid black;
+    background: linear-gradient(to left, #e0a22d 0%, #330867 100%);
 } 
-
-.col {
-    display: flex;
-    flex-direction: column;
-    background: grey;
-  }
 
   #roster {
       border: 5px solid black;
       border-radius: 5px;
       margin: 5%;
+      display: flex;
+      flex-direction: column;
       align-items: center;
+      background: grey;
   }
 
   ul {
@@ -79,8 +85,31 @@ img {
     border-radius: 5px;
     margin: 5%;
     text-align: center;
+    background: linear-gradient(to left, #e0a22d 0%, #330867 100%);
 }
 
-@media and (min-width: 768px) {
-    /* Convert roster and stats into column on same row */
+@media (min-width: 1025px) {
+    header {
+        padding: 1.25em;
+        font-size: 1.25em;
+    }
+    .team-updates {
+        flex-direction: row;
+    }
+    .schedule {
+        order: 0;
+        width: 210px;
+        justify-content: flex-start;
+        margin-right: auto;
+    }   
+    .team-img {
+        order: 1;
+        justify-content: flex-end;
+        margin-top: -25%;
+    }  
+
+    img {
+        width: 70%;
+        height: auto;
+    }
 }
