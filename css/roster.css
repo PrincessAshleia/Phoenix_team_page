@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to left, #e0a22d 0%, #330867 100%);
+  }
+  
+  table {
+    max-width: 960px;
+    margin: 15px auto;
+  }
+  
+  caption {
+    font-size: 2.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px gray;
+    padding: 5%;
+  }
+  
+  thead th {
+    background: rgb(54, 2, 54);
+    color: #FFF;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  tr {
+    background: #fff;
+    border-bottom: 2px solid #FFF;
+    margin-bottom: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background:rgb(188, 176, 190);
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 18px;
+    font-weight: 300;
+  }
+  
+  tfoot tr {
+    background: none;
+  }
+  
+  tfoot td {
+    padding: 5%;
+    font-size: 1em;
+    font-style: italic;
+    color: #fff;
+  }
+  
