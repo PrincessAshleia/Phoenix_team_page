@@ -3,18 +3,65 @@
 }
 
 :root {
-    background: rgb(218, 214, 214);
+    background:#fff;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border-radius: 15px;
     font-size: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     background: linear-gradient(to left, #e0a22d 0%, #330867 100%);
+}
+
+h1 {
+    margin: 5% auto;
+}
+
+/* Navigation menu */
+#nav-menu {
+    list-style: none;
+    margin-left: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#nav-menu li {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-menu li a {
+    padding: 5px 10px;
+    border-bottom: 2px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+}   
+
+#nav-menu li a:hover {
+    background-color: rgb(60, 8, 65);
+}
+
+#suns-logo-container {
+    display: block;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .team_updates {
@@ -39,11 +86,14 @@ img {
     margin-bottom: 2em;
 }
 
+h3 a {
+    color: white;
+}
+
 .schedule {
     order: 1;
     justify-content: space-around;
     text-align: center;
-    padding: 2%;
     border: 5px solid black;
     margin-bottom: 6%;
     background: grey;
@@ -52,6 +102,11 @@ img {
 .schedule a {
     color: white;
 }
+
+/* #expanded-schedule {
+    visibility: hidden;
+}
+*/
 
 .team-news {
     justify-content: space-around;
@@ -88,19 +143,57 @@ img {
     background: linear-gradient(to left, #e0a22d 0%, #330867 100%);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
     header {
         padding: 1.25em;
         font-size: 1.25em;
     }
+    #suns-logo-container {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1025px) {
+    header {
+        display: flex;
+        padding: 1.25em;
+        font-size: 2em;
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: column;
+        font-size: .8em;
+    }
+
+    #nav-menu li a {
+        max-width: 200px;
+    }
+
+    #suns-logo-container {
+        display: none;
+        }
+
     .team-updates {
         flex-direction: row;
     }
+
+    #expanded-schedule {
+        visibility: visible;
+    }
+
     .schedule {
         order: 0;
         width: 210px;
         justify-content: flex-start;
         margin-right: auto;
+        padding: 3%;
     }   
     .team-img {
         order: 1;
@@ -109,6 +202,7 @@ img {
     }  
 
     img {
+        margin-top: -32%;
         width: 70%;
         height: auto;
     }

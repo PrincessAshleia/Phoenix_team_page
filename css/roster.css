@@ -1,19 +1,15 @@
-* {
-    box-sizing: border-box;
-}
-  
   body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: linear-gradient(to left, #e0a22d 0%, #330867 100%);
+    background-color: rgb(106, 35, 116);
   }
   
   table {
-    max-width: 960px;
-    margin: 15px auto;
+    max-width: 80%;
+    margin: 5% auto;
   }
   
   caption {
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: #fff;
@@ -56,4 +52,12 @@
     font-style: italic;
     color: #fff;
   }
-  
+
+  @media (min-width: 768px) {
+    body {
+      background-image: linear-gradient(to left, #e0a22d 0%, #330867 100%);
+    }
+    caption {
+      font-size: 2.5em;
+    }
+  }
