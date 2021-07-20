@@ -31,6 +31,7 @@ h1 {
 }
 
 #suns-logo-container {
+    cursor: pointer;
     grid-column-start: 3;
     grid-row-start: 1;
     display: block;
