@@ -9,7 +9,7 @@
 header {
     display: grid;
     grid-template-columns: .5fr .5fr .5fr;
-    justify-content: space-around;
+    align-items: center;
     grid-template-rows: .25fr .25fr;
     border-radius: 15px;
     font-size: 1em;
@@ -21,19 +21,22 @@ header {
 h1 {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-start: -3;
+    grid-row-end: -1;
+    margin-left: 5%;
     align-self: center;
-    margin-left: 15%;
-    margin-right: auto;
     white-space: nowrap;
-    font-size: 2.5em;
+    font-size: 2em;
+    margin-left: 5%;
+    margin-right: auto;
 }
 
 #suns-logo-container {
     cursor: pointer;
     grid-column-start: 3;
-    grid-row-start: 1;
+    grid-column-end: 4;
+    grid-row-start: -3;
+    grid-row-end: -2;
     display: block;
     height: 100px;
     width: 90px;
@@ -42,16 +45,19 @@ h1 {
 }
 
 /* Navigation menu */
+
+.header-nav {
+    
+}
 #nav-menu {
     grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-start: 2;
+    grid-column-end: 3;
+    grid-row-start: -1;
+    grid-row-end: -2;
     list-style: none;
     display: none;
     flex-direction: row;
-    justify-content: center;
-    margin-left: auto;
+    justify-content: space-between;
 }
 
 #nav-menu li {
@@ -160,6 +166,10 @@ h3 a {
     header {
         padding: 1.25em;
         font-size: 1.25em;
+    }
+
+    h1 {
+        font-size: 3em;
     }
     #suns-logo-container {
         display: none;
