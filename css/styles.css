@@ -97,8 +97,6 @@ h3 a {
 }
 
 .schedule {
-    order: 1;
-    justify-content: space-around;
     text-align: center;
     border: 5px solid black;
     border-radius: 5px;
@@ -112,7 +110,6 @@ h3 a {
 }
 
 .team-news {
-    justify-content: space-around;
     text-align: center;
     margin: 5%;
     padding: 2%;
@@ -134,9 +131,6 @@ h3 a {
   ul {
       display: flex;
       flex-direction: column;
-  }
-
-  li {
   }
 
   .stats {
