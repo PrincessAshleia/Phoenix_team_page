@@ -16,10 +16,10 @@ Among the features I utilized for my Code Louisville project are:
 
 1. A navigation menu that alternates between horizontal and vertical styles at desktop and mobile sizes. While in mobile view, the navigation menu is hidden until the user clicks on the "hamburger" icon —- in this case, the Phoenix Suns basketball logo. Once the user clicks on the icon, a horizontal navigation menu is displayed. That menu then switches to a vertical style at 768px and larger. 
 
-2. I used CSS Grid layout to position the Suns logo icon and H1 in the header. I also utilized CSS Grid to change the layout when the viewport is 1025px or larger. In this viewport, the layout switches from a single column to a two-column layout. The team image and schedule are aligned side by side at this viewport, while the roster and latest news fill up the next row of the grid. The stats section is in a row by itself.  
+2. I used CSS Grid layout to position the Suns logo icon and H1 in the header. I also utilized CSS Grid to change the layout when the viewport is between 768px and 1024px, and 1025px or larger. As mentioned above, when the viewport is between 768px and 1024px, the main image in one stand-alone column, while the schedule and latest news appear side by side, and the statistics and roster section are side by side at the bottom of the page. At desktop size, the page is further rearranged in a two-column layout.
 
 3. I used “:nth-child” to change the background color for every other row in the HTML table on the roster page, which can be viewed by clicking the "see full roster link."
 
 4. Using JavaScript, I was able to show and hide the navigation in mobile view when a user clicks on the Suns logo icon. Once the user clicks on the icon, the navigation menu appears. The user can make the navigation menu disappear from view by clicking on the Suns logo icon again.  
 
-5. Using JavaScript, I also created a dropdown menu in the team schedules section. When clicking on the button, a menu will display two choices: you can either click on a link to the 2020-21 schedule or the previous year's schedule, 2019-20. 
+5. Using JavaScript, I also created a dropdown menu in the team schedule section. When clicking on the button, a menu will display two choices: you can either click on a link to the 2020-21 schedule or a link to the previous year's schedule, 2019-20. 
