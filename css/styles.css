@@ -98,16 +98,69 @@ h3 a {
 
 .schedule {
     text-align: center;
+    font-size: 18px;
     border: 5px solid black;
     border-radius: 5px;
     margin: 5%;
     margin-bottom: 6%;
     background: grey;
+    padding: 10%;
 }
 
 .schedule a {
     color: white;
 }
+
+ /* Dropdown Button */
+ .menubtn {
+    background-color: #330867;
+    color: white;
+    padding: 10%;
+    margin-top: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Button on hover and focus */
+  .menubtn:hover, .menubtn:focus {
+    background-color: #6a359c;
+  }
+  
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown content (default hidden) */
+  .menu-options {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 110px;
+    box-shadow: 0px 8px 8px 0px;
+  }
+  
+  /* Links inside the dropdown */
+  .menu-options a {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of links on hover */
+  .menu-options a:hover {
+    background-color: #6a359c;
+    color: white;
+  }
+  
+  /* Show the dropdown menu with JavaScript */
+  .show {display:block;} 
 
 .team-news {
     text-align: center;
@@ -141,7 +194,7 @@ h3 a {
     background: linear-gradient(to left, #e0a22d 0%, #330867 100%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     header {
         padding: 1.25em;
         font-size: 1.25em;
@@ -159,6 +212,57 @@ h3 a {
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 1em;
+    }
+
+    /* Grid layout */
+
+    #suns-logo-container {
+        display: none;
+        }
+
+    .container {
+        display: grid;
+        grid-auto-columns: repeat(2, 1fr);
+        grid-auto-rows: repeat(3, 1fr);
+    }
+
+    .team-img {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: -5;
+        grid-row-end: -4;
+    }
+
+    .schedule {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: -4;
+        grid-row-end: -2;
+        text-align: center;
+    }
+
+    .team-news {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: -4;
+        grid-row-end: -3;
+
+    }
+
+    .roster {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: -3;
+        grid-row-end: -1;
+        background: linear-gradient(to left, #e0a22d 0%, #330867 100%);
+    }
+
+    .stats {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: -2;
+        grid-row-end: -1;
+
     }
 }
 
@@ -179,52 +283,55 @@ h3 a {
         max-width: 200px;
     }
 
+    /* Grid layout */
+
     #suns-logo-container {
         display: none;
         }
 
     .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto 1fr;
+        grid-auto-columns: repeat(3, 1fr);
+        grid-auto-rows: 2fr repeat(2, 1fr);
     }
 
     .team-img {
         grid-column-start: 2;
         grid-column-end: 4;
-        grid-row-start: -5;
-        grid-row-end: -4;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
 
     .schedule {
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: -5;
-        grid-row-end: -4;
+        grid-row-start: 1;
+        grid-row-end: 2;
         text-align: center;
     }
 
     .team-news {
         grid-column-start: 2;
         grid-column-end: 4;
-        grid-row-start: -4;
-        grid-row-end: -3;
+        grid-row-start: 2;
+        grid-row-end: 3;
 
     }
 
     .roster {
         grid-column-start: 1;
         grid-column-end 2;
-        grid-row-start: -4;
-        grid-row-end: -3;
+        grid-row-start: 2;
+        grid-row-end: 4;
         background: linear-gradient(to left, #e0a22d 0%, #330867 100%);
     }
 
     .stats {
         grid-column-start: 2;
-        grid-column-end 4;
-        grid-row-start: -3;
-        grid-row-end: -2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        align-items: stretch;
 
     }
 }

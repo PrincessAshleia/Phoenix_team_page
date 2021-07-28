@@ -6,11 +6,11 @@ Each section includes a clickable link to an external website, with the exceptio
 
 I designed this webpage using the mobile-first principle and included two media queries that adapt the layout for medium-sized screens and large screens. 
 
-In the mobile layout, the header is positioned with a Suns logo button in the right-hand corner. Upon clicking on the Suns logo, a navigation menu will appear with clickable links to each of the four sections mentioned above. A team image is displayed beneath the header, followed by a single column that features each of the four sections listed above. 
+In the mobile layout, the header is positioned with a Suns logo button in the right-hand corner. Upon clicking on the Suns logo, a navigation menu will appear with clickable jump links to each of the four sections mentioned above. A team image is displayed beneath the header, followed by a single column that features each of the four sections listed above. 
 
-On medium-sized screens, the header no longer displays the Suns logo button, and the navigation menu is constantly visible in the right-hand corner. I used Flexbox to position this navigation menu in a vertical column. 
+On medium-sized screens, the header no longer displays the Suns logo button, and the navigation menu is constantly visible in the right-hand corner. I used Flexbox to position this navigation menu in a vertical column. I also used CSS Grid to rearrange the sections by placing the main image in one stand-alone column, while the schedule and latest news appear side by side, and the statistics and roster section are side by side at the bottom of the page. 
 
-On large screens, the navigation is again visible at all times, while the layout of the body of the webpage changes greatly. Using CSS Grid, I positioned the team image and schedule side by side, while the team news and roster sections appear side by side in an adjacent row. The statistics section takes up a row by itself. 
+On large screens, the navigation is again visible at all times, while the layout of the body of the webpage changes further. Using CSS Grid, I positioned the team image and schedule side by side, while the roster section spans two rows, and the team news and statistics sections appear adjacent to the roster section in two separate rows.
 
 Among the features I utilized for my Code Louisville project are: 
 
@@ -21,3 +21,5 @@ Among the features I utilized for my Code Louisville project are:
 3. I used “:nth-child” to change the background color for every other row in the HTML table on the roster page, which can be viewed by clicking the "see full roster link."
 
 4. Using JavaScript, I was able to show and hide the navigation in mobile view when a user clicks on the Suns logo icon. Once the user clicks on the icon, the navigation menu appears. The user can make the navigation menu disappear from view by clicking on the Suns logo icon again.  
+
+5. Using JavaScript, I also created a dropdown menu in the team schedules section. When clicking on the button, a menu will display two choices: you can either click on a link to the 2020-21 schedule or the previous year's schedule, 2019-20. 

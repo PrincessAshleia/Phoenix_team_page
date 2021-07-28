@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/scripts.js"></script>
+    <script defer src="js/schedule.js"></script>
     <title>Phoenix Suns: The Edge</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
         </nav>
     </header>
     <!-- End header -->
-    <!--Grid layout-->
+    <!-- Start grid layout-->
         <div class="container">
             <section id="team-img" class="team-img">
                 <img src="booker-paul-suns.jpg" alt="Devin Booker and Chris Paul">
@@ -41,6 +42,15 @@
                     <p>Tuesday, July 20: @Milwaukee | 9 p.m. on ABC</p>
                     <p>Thursday, July 22: @Phoenix | 9 p.m. on ABC</p>
                     </div>
+
+                <!-- Menu displaying year-by-year schedules-->
+                <div class="menu">
+                    <button onclick="myFunction()" class="menubtn">select season</button>
+                    <div id="fullMenu" class="menu-options">
+                        <a href="https://www.basketball-reference.com/teams/PHO/2021_games.html">2020-2021</a>
+                        <a href="https://www.basketball-reference.com/teams/PHO/2020_games.html">2019-2020</a>
+                    </div>
+                    </div> 
             </section>
             <section id="team-news" class="team-news">
                 <h2>Latest news</h2>
