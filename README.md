@@ -20,7 +20,7 @@ Among the features I utilized for my Code Louisville project are:
 
 2. I used CSS Grid layout to position the Suns logo icon and H1 in the header. I also utilized CSS Grid to change the layout when the viewport is between 768px and 1024px, and 1025px or larger. As mentioned above, when the viewport is between 768px and 1024px, the main image is placed inside one stand-alone column, while the schedule and latest news appear side by side beneath the main image, and the statistics and roster sections are side by side at the bottom of the page. At 1025px or larger, the page is further rearranged into a two-column layout with sections at new locations.
 
-3. I used “:nth-child” to change the background color for every other row in the HTML table on the roster page, which can be viewed by clicking the "see full roster link" or by opening the roster.html file. 
+3. I used “:nth-child” to change the background color for every other row in the HTML table on the roster page, which can be viewed by clicking the "see full roster" link or by opening the roster.html file. 
 
 4. Using JavaScript, I was able to show and hide the navigation in mobile view when a user clicks on the Suns logo icon. Once the user clicks on the icon, the navigation menu appears. The user can make the navigation menu disappear from view by clicking on the Suns logo icon again.  
 

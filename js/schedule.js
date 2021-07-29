@@ -1,4 +1,4 @@
-/* When user clicks on the button,
+// When user clicks on the button
 toggle between hiding and showing dropdown content */
 function myFunction() {
     document.getElementById("fullMenu").classList.toggle("show");
